@@ -1,4 +1,4 @@
-Run npm start to set
+Run npm start to test
 
 ```bash
 npm start
