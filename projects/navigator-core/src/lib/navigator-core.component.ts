@@ -7,8 +7,8 @@ import { TreeNodeComponent, TreeViewComponent } from 'marlin-web-ui';
   template: `
     <div>
       <p>navigator-core works!</p>
-      <ul app-tree-view>
-        <li app-tree-node>Wadup</li>
+      <ul lib-tree-view>
+        <li lib-tree-node>Wadup</li>
       </ul>
     </div>
   `,
