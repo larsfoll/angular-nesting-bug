@@ -8,14 +8,6 @@
     {
       "command": "npm install",
       "name": "Installing Dependencies"
-    },
-    {
-      "command": "ng build navigator-lib",
-      "name": "build navigator-lib"
-    },
-    {
-      "command": "ng build navigator-core",
-      "name": "build navigator-core"
     }
   ],
 
