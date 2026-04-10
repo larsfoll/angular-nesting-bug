@@ -1,6 +1,16 @@
-<p>App</p>
-<lib-navigator-core></lib-navigator-core>
+<p>All the li should have a red outline</p>
 
 <ul lib-tree-view>
-  <li lib-tree-node>Wadup</li>
+  <li lib-tree-node>Components imported straight from navigator-lib</li>
+  <li app-tree-node>Here the nested styling works!</li>
+</ul>
+
+<!-- <lib-navigator-core>
+  Component from navigator core which uses the same components, nested styling
+  works here as well
+</lib-navigator-core> -->
+
+<ul app-tree-view>
+  <li app-tree-node>I'm a copy of the components inside the app</li>
+  <li app-tree-node>Here the nested styling does not work!</li>
 </ul>

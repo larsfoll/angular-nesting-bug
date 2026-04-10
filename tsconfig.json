@@ -10,11 +10,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "marlin-web-ui": [
-        "./dist/marlin-web-ui"
-      ],
       "navigator-core": [
         "./dist/navigator-core"
+      ],
+      "navigator-lib": [
+        "./dist/navigator-lib"
       ]
     },
     "skipLibCheck": true,

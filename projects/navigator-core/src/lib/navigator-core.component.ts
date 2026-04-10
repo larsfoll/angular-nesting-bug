@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
-import { TreeNodeComponent, TreeViewComponent } from 'marlin-web-ui';
+import { TreeNodeComponent, TreeViewComponent } from 'navigator-lib';
 
 @Component({
   selector: 'lib-navigator-core',
   imports: [TreeViewComponent, TreeNodeComponent],
   template: `
-    <div>
-      <p>navigator-core works!</p>
-      <ul lib-tree-view>
-        <li lib-tree-node>Wadup</li>
-      </ul>
-    </div>
+    <ul lib-tree-view>
+      <li lib-tree-node><ng-content /></li>
+    </ul>
   `,
-  styles: ``,
 })
 export class NavigatorCoreComponent {}

@@ -20,9 +20,7 @@
             "outputPath": "dist/navigator-app",
             "index": "projects/navigator-app/src/index.html",
             "browser": "projects/navigator-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/navigator-app/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -30,9 +28,6 @@
                 "glob": "**/*",
                 "input": "projects/navigator-app/public"
               }
-            ],
-            "styles": [
-              "projects/navigator-app/src/styles.scss"
             ],
             "scripts": []
           },
@@ -78,10 +73,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/navigator-app/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -89,9 +81,6 @@
                 "glob": "**/*",
                 "input": "projects/navigator-app/public"
               }
-            ],
-            "styles": [
-              "projects/navigator-app/src/styles.scss"
             ],
             "scripts": []
           }
@@ -123,31 +112,28 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/navigator-core/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
     },
-    "marlin-web-ui": {
+    "navigator-lib": {
       "projectType": "library",
-      "root": "projects/marlin-web-ui",
-      "sourceRoot": "projects/marlin-web-ui/src",
+      "root": "projects/navigator-lib",
+      "sourceRoot": "projects/navigator-lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/marlin-web-ui/ng-package.json"
+            "project": "projects/navigator-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/marlin-web-ui/tsconfig.lib.prod.json"
+              "tsConfig": "projects/navigator-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/marlin-web-ui/tsconfig.lib.json"
+              "tsConfig": "projects/navigator-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -155,11 +141,8 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/marlin-web-ui/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "tsConfig": "projects/navigator-lib/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
