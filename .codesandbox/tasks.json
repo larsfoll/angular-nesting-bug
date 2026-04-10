@@ -1,0 +1,46 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install -g @angular/cli@19.2.19",
+      "name": " npm install -g @angular/cli@19.2.19"
+    },
+    {
+      "command": "npm install",
+      "name": "Installing Dependencies"
+    },
+    {
+      "command": "ng build navigator-lib",
+      "name": "build navigator-lib"
+    },
+    {
+      "command": "ng build navigator-core",
+      "name": "build navigator-core"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "ng": {
+      "name": "ng",
+      "command": "npm run ng"
+    },
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build"
+    },
+    "watch": {
+      "name": "watch",
+      "command": "npm run watch"
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test"
+    }
+  }
+}
